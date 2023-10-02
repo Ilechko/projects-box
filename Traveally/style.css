@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@500&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  min-width: 1600px;
+  min-height: 960px;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --color-black: #000000;
+  --color-aqua: #4aa9bc;
+  --color-white: #ffffff;
+  --color-aqua-dark: #5abbce;
+}
+
+.container-backgraund {
+  min-height: inherit;
+  width: inherit;
+}
+
+.backgraund {
+  min-height: inherit;
+  background-color: var(--color-black);
+  background-image: url(../img/wave.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: contain;
+}
+
+.logo {
+  width: 215.083px;
+  height: 223.449px;
+  filter: drop-shadow(0px 10.003856658935547px 5.001928329467773px rgba(0, 0, 0, 0.25));
+  margin-top: 210px;
+  margin-left: 230.2px;
+}
+
+.title {
+  margin-left: 164.6px;
+  font-size: 77.974px;
+  font-weight: 400;
+  color: var(--color-white);
+}
+
+.title span {
+  color: var(--color-aqua-dark);
+  font-weight: 500;
+}
+
+.paragraph {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 31.73px;
+  margin-left: 94px;
+  color: var(--color-white);
+  font-weight: 300;
+}
+
+/* Загальний контейнер на верхню частину телефону */
+.container_phone {
+  width: 293px;
+  height: 635px;
+  transform: rotate(-13deg);
+  border-radius: 40px;
+  background-image: url(../img/menu_item_gradient.png),
+    url(../img/menu_item_photo_one.png);
+  position: absolute;
+  top: 200px;
+  left: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  z-index: 1;
+}
+
+/* Контейнер на текст та кнопку відкривання інформації */
+.container_name_button_arrow {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.name_button {
+  font-size: 20.554px;
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+/* кнопка відкривання інформації із стрілкою */
+.button_arrow_border {
+  width: 54.125px;
+  height: 54.125px;
+  border-radius: 13.702px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 2.05536px 2.74048px 0px rgba(255, 255, 255, 0.25) inset,
+    0px -2.05536px 2.74048px 0px rgba(0, 0, 0, 0.25) inset;
+  backdrop-filter: blur(2.055363655090332px);
+}
+
+.button_arrow {
+  width: 41.755px;
+  height: 41.754px;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  border: none;
+  border-radius: 9.592px;
+  background: var(--color-aqua);
+  box-shadow: 0px 1.37024px 2.74048px 0px rgba(255, 255, 255, 0.25) inset,
+    0px -1.37024px 2.74048px 0px rgba(66, 129, 131, 0.64) inset,
+    0px 0px 19.18339px 0px rgba(255, 255, 255, 0.25);
+  background-image: url(../img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button_arrow_active {
+  transform: rotate(90deg);
+}
+
+/*  */
+.button_point {
+  width: 6.166px;
+  height: 6.166px;
+  border-radius: 1.37px;
+  border: 0.685px solid rgba(74, 169, 188, 0.8);
+  box-shadow: 0px 1.37024px 2.74048px 0px rgba(110, 109, 109, 0.43);
+  margin-right: 21.41px;
+  background: var(--color-black);
+}
+
+/*сидання на 0 в останнього елементу*/
+.button_point:last-child {
+  margin-right: 0;
+}
+
+.button_point_active {
+  transform: rotate(-45deg);
+  background: var(--color-aqua);
+  box-shadow: 0px 1.37024px 2.74048px 0px rgba(255, 255, 255, 0.25);
+}
+
+/* Нижня кнопка телефону */
+.container_assistive_touch {
+  width: 293.232px;
+  height: 61px;
+  border: 0.343px solid rgba(0, 0, 0, 0.1);
+  background: var(--color-black);
+  box-shadow: 0px -0.68512px 13.70243px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 40px 40px;
+  padding-top: 30px;
+}
+
+.assistive_touch {
+  width: 85.64px;
+  height: 2.055px;
+  border-radius: 8.221px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 auto;
+}
+
+.container_phone_two {
+  width: 293px;
+  height: 635px;
+  transform: rotate(-13deg);
+  border-radius: 40px;
+  background-image: url(../img/menu_item_gradient.png),
+    url(../img/menu_item_photo_two.png);
+  position: absolute;
+  top: 143px;
+  left: 950px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  z-index: 2;
+}
+
+.fly {
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  transform: rotate(13.18deg);
+}
+
+.container_phone_three {
+  width: 293px;
+  height: 635px;
+  transform: rotate(-13deg);
+  border-radius: 40px;
+  background-image: url(../img/menu_item_gradient.png),
+    url(../img/menu_item_photo_three.png);
+  position: absolute;
+  top: 88px;
+  left: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  z-index: 3;
+}
+
+/* 3d move  around*/
+@keyframes platform {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+.move {
+  position: absolute;
+  top: 10%;
+  left: 1%;
+}
+
+.move:before,
+.move:after {
+  content: '';
+  padding: 125px;
+  position: absolute;
+  left: 55%;
+  width: 90%;
+  top: 54%;
+  border-radius: 100%;
+  animation: platform 20s infinite alternate ease-in-out;
+}
+
+.move:before {
+  border-color: var(--color-aqua-dark) var(--color-aqua-dark) var(--color-black) var(--color-black);
+  z-index: -1;
+}
+
+.move:after {
+  box-shadow: 15px 15px 35px rgba(73, 167, 173, 0.8);
+}
